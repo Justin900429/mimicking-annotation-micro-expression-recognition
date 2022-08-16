@@ -1,5 +1,7 @@
 # README
 
+![model](images/model.png)
+
 ## Introduction
 This repo is the source code for the paper: **"Mimicking the Annotation Process for Recognizing the Micro Expressions"**.
 
