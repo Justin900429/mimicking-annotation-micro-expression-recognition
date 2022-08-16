@@ -179,9 +179,7 @@ Our results are shown in the below table:
     --save_path <place to save the AU-CAM>
   ```
 
-<center>
-  <img src="images/casme_dist.svg" alt="casme distribution" width=500/>
-  <p>&#9679; CASME II distribution plot</p>
-  <img src="images/samm_dist.svg" alt="samm distribution" width="500"/>
-  <p>&#9679; SAMM distribution plot</p>
-</center>  
+## Distribution Plot
+
+<img src="images/casme_dist.svg" alt="casme distribution" width=500/>
+<img src="images/samm_dist.svg" alt="samm distribution" width="500"/>
