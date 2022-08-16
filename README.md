@@ -180,6 +180,8 @@ Our results are shown in the below table:
   ```
 
 ## Distribution Plot
-
+### CASME II
 <img src="images/casme_dist.svg" alt="casme distribution" width=500/>
+
+### SAMM
 <img src="images/samm_dist.svg" alt="samm distribution" width="500"/>
