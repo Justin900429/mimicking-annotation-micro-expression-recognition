@@ -187,3 +187,13 @@ Our results are shown in the below table:
 
 ### SAMM
 <img src="images/samm_dist.svg" alt="samm distribution" width="500"/>
+
+## Citation
+```bib
+@inproceedings{ruan2022mimicking,
+  title={Mimicking the Annotation Process for Recognizing the Micro Expressions},
+  author={Ruan, Bo-Kai and Lo, Ling and Shuai, Hong-Han and Cheng, Wen-Huang},
+  booktitle={ACM International Conference on Multimedia},
+  year={2022}
+}
+```
