@@ -101,7 +101,7 @@ $ python test.py \
   --catego casme \
   --num_classes 3
 
-# Test for the three-class CASME II
+# Test for the three-class SAMM
 $ python test.py \
   --img_root <img root of SAMM> \
   --csv_file csv_file/sep_three_samm.csv \
