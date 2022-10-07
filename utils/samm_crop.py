@@ -3,22 +3,21 @@ import os
 import glob
 
 from PIL import Image
-from facenet_pytorch import MTCNN
 import numpy as np
-import matplotlib.pyplot as plt
+from tqdm import tqdm
 
-from .landmarks import detect_landmarks
+from landmarks import detect_landmarks
 
 
 def crop_region(img):
     height, width, _ = img.shape
     landmarks = np.array(detect_landmarks(img))
 
-    min_x = max(0, np.min(landmarks[:, 1]) - 20)
-    max_x = min(np.max(landmarks[:, 1]) - 40, height)
+    min_x = max(0, np.min(landmarks[:, 1]))
+    max_x = min(np.max(landmarks[:, 1]), height)
 
-    min_y = max(0, np.min(landmarks[:, 0]) + 10)
-    max_y = min(np.max(landmarks[:, 0]) - 20, width)
+    min_y = max(0, np.min(landmarks[:, 0]))
+    max_y = min(np.max(landmarks[:, 0]), width)
 
     return min_x, max_x, min_y, max_y
 
@@ -33,7 +32,7 @@ if __name__ == "__main__":
     new_root = args.new_path
 
     subjects = os.listdir(img_root)
-    for subject in subjects:
+    for subject in tqdm(subjects):
         type_folders = os.listdir(f"{img_root}/{subject}")
         for type_folder in type_folders:
             image_list = [
